@@ -2,12 +2,18 @@
 <html>
 <head>
   <title>Testapp</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>  
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<h1>Welcome to Bike Berlin</h1>
+<h2>Your source for used bikes in Berlin</h2>
 <%= yield %>
 
 </body>
