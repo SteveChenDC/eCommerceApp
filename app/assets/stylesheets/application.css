@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+div {
+	border: 1px solid red;
+}
+#wrapper {
+	width: 940px;
+	margin: 0 auto;
+}
