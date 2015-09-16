@@ -20,3 +20,8 @@ div {
 	width: 940px;
 	margin: 0 auto;
 }
+.lower{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
