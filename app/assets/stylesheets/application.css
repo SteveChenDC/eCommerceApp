@@ -20,12 +20,15 @@ div {
 	width: 940px;
 	margin: 0 auto;
 }
-.lower{
+.lower {
 	width: 100%;
 	display: inline-block;
 	position: relative;
 }
-.search-bar{
+.search-bar {
 	padding: 15px;
     float: right;
+}
+.search-bar label{
+	color: white;
 }
