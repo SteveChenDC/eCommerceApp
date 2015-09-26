@@ -44,7 +44,8 @@
               <li><%= link_to 'FAQ',static_pages_faq_path %></li>
               <li><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul>
-            <%= form_tag("/products", method: "get") do %>
+            <!-- Search bar Form -->
+            <%= form_tag("/products", method: "get", class: "search-bar") do %>
               <%= label_tag(:q, "Search for:") %>
               <%= text_field_tag(:q) %>
               <%= submit_tag("Search") %>

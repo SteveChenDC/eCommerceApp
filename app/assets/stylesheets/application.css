@@ -25,3 +25,7 @@ div {
 	display: inline-block;
 	position: relative;
 }
+.search-bar{
+	padding: 15px;
+    float: right;
+}
