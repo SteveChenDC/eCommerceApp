@@ -2,11 +2,14 @@
 <html>
 <head>
   <title>Testapp</title>
+
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>  
+
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
   <%= csrf_meta_tags %>
@@ -41,6 +44,11 @@
               <li><%= link_to 'FAQ',static_pages_faq_path %></li>
               <li><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul>
+            <%= form_tag("/products", method: "get") do %>
+              <%= label_tag(:q, "Search for:") %>
+              <%= text_field_tag(:q) %>
+              <%= submit_tag("Search") %>
+              <% end %>
           </div>
         </div><!-- end nav container -->
       </nav><!-- navbar ends here -->
