@@ -18,8 +18,15 @@
 <div id="wrapper">
   <header>
     <div class="uppest">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      <ul class="pull-right">
+        <li>
+          <% if user_signed_in? %>
+            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+          <%= link_to('Login', new_user_session_path) %>
+          <% end %>
+        </li>
+      </ul>
     </div>
     <div class="upper container-fluid">
       <div class="logo col-lg-2">
@@ -57,6 +64,9 @@
           </div>
         </div><!-- end nav container -->
       </nav><!-- navbar ends here -->
+      <!-- devise login notices -->
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
     </div>
   </header>
 
