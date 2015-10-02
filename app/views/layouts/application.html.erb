@@ -17,8 +17,8 @@
 <body>
 <div id="wrapper">
   <header>
-    <div class="uppest">
-      <ul class="pull-right">
+    <div class="upper-header">
+      <ul class="col-lg-1 pull-right">
         <li>
           <% if user_signed_in? %>
             <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
@@ -27,8 +27,9 @@
           <% end %>
         </li>
       </ul>
+      <p class="" style="">0 items in cart</p>
     </div>
-    <div class="upper container-fluid">
+    <div class="middle-header">
       <div class="logo col-lg-2">
         <h1>LOGO</h1>
       </div>
@@ -36,7 +37,7 @@
           <p>Welcome to our eCommerce store. Specializing in x, y and z.</p>
       </div>
     </div>
-    <div class="lower">
+    <div class="lower-header">
       <nav class="navbar navbar-inverse" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -73,7 +74,14 @@
   <%= yield %>
 
   <footer>
-    footer
+    <ul>
+      <li>Home</li> |
+      <li>Products</li> |
+      <li>About</li> |
+      <li>FAQ</li> |
+      <li>Contact</li>
+    </ul>
+    <span>© 2015 steve chen</span>
   </footer>
 </div>
 

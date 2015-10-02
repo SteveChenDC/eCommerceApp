@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+.text-center{
+	text-align: center;
+}
 div {
 	border: 1px solid red;
 }
@@ -20,10 +24,15 @@ div {
 	width: 940px;
 	margin: 0 auto;
 }
-.lower {
+.upper-header{
+	display: block;
+}
+.middle-header{
+	display: block;
+}
+.lower-header{
 	width: 100%;
 	display: inline-block;
-	position: relative;
 }
 .search-bar {
 	padding: 15px;
@@ -31,4 +40,15 @@ div {
 }
 .search-bar label{
 	color: white;
+}
+
+footer{
+	text-align: center;
+	background-color: #F6F6F6;
+}
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	display: inline;
 }
