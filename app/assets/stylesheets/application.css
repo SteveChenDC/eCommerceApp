@@ -17,22 +17,26 @@
 .text-center{
 	text-align: center;
 }
-div {
-	border: 1px solid red;
-}
+/*div{
+	border: 1px solid black;
+}*/
 #wrapper {
 	width: 940px;
 	margin: 0 auto;
 }
 .upper-header{
-	display: block;
+    height: 45px;
+    background-color: #54a792;
+    color: #FFF;
+    font-size: 12px;
+    width: 100%;
 }
 .middle-header{
 	display: block;
 }
 .lower-header{
 	width: 100%;
-	display: inline-block;
+	display: block;
 }
 .search-bar {
 	padding: 15px;

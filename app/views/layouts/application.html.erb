@@ -18,23 +18,31 @@
 <div id="wrapper">
   <header>
     <div class="upper-header">
-      <ul class="col-lg-1 pull-right">
-        <li>
-          <% if user_signed_in? %>
-            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-            <% else %>
-          <%= link_to('Login', new_user_session_path) %>
-          <% end %>
-        </li>
-      </ul>
-      <p class="" style="">0 items in cart</p>
+      <div class="container-fluid">
+        <div class="row">
+          <span class="pull-right">0 items in cart</span>
+          <ul class="col-lg-1 pull-right">
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                <% else %>
+              <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="middle-header">
-      <div class="logo col-lg-2">
-        <h1>LOGO</h1>
-      </div>
-      <div class="motto col-lg-10">
-          <p>Welcome to our eCommerce store. Specializing in x, y and z.</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="logo col-lg-2">
+            <h1>LOGO</h1>
+          </div>
+          <div class="motto col-lg-10">
+              <p>Welcome to our eCommerce store. Specializing in x, y and z.</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="lower-header">
