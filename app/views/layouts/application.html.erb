@@ -74,8 +74,12 @@
         </div><!-- end nav container -->
       </nav><!-- navbar ends here -->
       <!-- devise login notices -->
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      <% if notice %>
+      <p class="notice alert-warning"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
     </div>
   </header>
 
