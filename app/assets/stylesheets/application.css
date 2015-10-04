@@ -27,14 +27,17 @@
 	margin: 0 auto;
 }
 .upper-header{
-    height: 45px;
-    background-color: #54a792;
-    color: #FFF;
-    font-size: 12px;
-    width: 100%;
+  height: 45px;
+  background-color: #54a792;
+  color: #FFF;
+  font-size: 12px;
+  width: 100%;
+  padding-top: 13px;
+  padding-right: 15px;
 }
 .middle-header{
 	display: block;
+  height: 90px;
 }
 .lower-header{
 	width: 100%;
@@ -42,7 +45,7 @@
 }
 .search-bar {
 	padding: 15px;
-    float: right;
+  float: right;
 }
 .search-bar label{
 	color: white;
