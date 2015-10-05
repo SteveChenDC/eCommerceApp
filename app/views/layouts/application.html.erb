@@ -19,9 +19,10 @@
   <header>
     <div class="upper-header">
       <div class="container-fluid">
-        <div class="row">
-          <span class="pull-right">0 items in cart</span>
-          <ul class="col-lg-1 pull-right">
+        <div class="row upper-row">
+          <span class="upper-headline col-lg-10">Everything's 50% off! Free shipping for orders above $50</span>
+          <span class="pull-right">| 0 items</span>
+          <ul class="pull-right" style="list-style:none;">
             <li>
               <% if user_signed_in? %>
                 <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
@@ -36,11 +37,13 @@
     <div class="middle-header">
       <div class="container-fluid">
         <div class="row">
-          <div class="logo col-lg-2">
-            <h1>LOGO</h1>
+          <div class="col-lg-4">
+            <%= image_tag("templogo.jpg", :class => "logo") %>
+            <span>An eCommerce website</span>
           </div>
-          <div class="motto col-lg-10">
-              <p>Welcome to our eCommerce store. Specializing in x, y and z.</p>
+          <div class="motto col-lg-8">
+              <p>Quality means doing it right when no one is looking.</p>
+              <p>- Henry Ford</p>
           </div>
         </div>
       </div>

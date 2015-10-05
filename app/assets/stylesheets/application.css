@@ -27,13 +27,14 @@
 	margin: 0 auto;
 }
 .upper-header{
-  height: 45px;
+  height: 28px;
   background-color: #54a792;
   color: #FFF;
   font-size: 12px;
-  width: 100%;
-  padding-top: 13px;
-  padding-right: 15px;
+}
+.upper-row{
+  padding: 5px;
+  overflow: hidden;
 }
 .middle-header{
 	display: block;
@@ -49,6 +50,19 @@
 }
 .search-bar label{
 	color: white;
+}
+.motto{
+  font-style: italic;
+  background-color: #F6F6F6;
+  height: 90px;
+
+}
+.upper-header{
+  font-weight: 600;
+}
+.logo{
+  max-width: 300px;
+  max-height: 90px;
 }
 
 footer{
