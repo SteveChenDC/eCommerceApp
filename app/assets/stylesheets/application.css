@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ body{
+  padding-top:;
+ }
 .item-center{
 	margin: 0 auto;
 }
@@ -55,7 +58,6 @@
   font-style: italic;
   background-color: #F6F6F6;
   height: 90px;
-
 }
 .upper-header{
   font-weight: 600;
