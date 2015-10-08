@@ -20,6 +20,17 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    @user = current_user #line added based off devise doc
+  end
+
+  def update_password
+    @user = User.find(current_user.id)
+    if @user.update(user_params)
+      sign_in @user, :bypass => true
+      redirect_to root_path
+    else
+      render "edit"
+    end
   end
 
   # POST /users
@@ -70,6 +81,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :email, :encrypted_password)
+      params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
     end
 end

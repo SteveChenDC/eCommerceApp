@@ -23,10 +23,14 @@
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
-<!--   <div class="field">
-    <%= f.label :encrypted_password, "Password" %><br>
-    <%= f.password_field :encrypted_password %>
-  </div> -->
+  <div class="field">
+    <%= f.label :password, "Password" %><br>
+    <%= f.password_field :password, :autocomplete => "off" %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
