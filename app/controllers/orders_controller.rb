@@ -1,4 +1,6 @@
 class OrdersController < ApplicationController
+  before_filter :authenticate_user! # Prompts user for authentication
+
 	def index
 	end
 

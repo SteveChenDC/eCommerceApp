@@ -1,5 +1,4 @@
 class ProductsController < ApplicationController
-  before_filter :authenticate_user! # Prompts user for authentication
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
