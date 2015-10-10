@@ -7,10 +7,13 @@ Rails.application.routes.draw do
       patch 'update_password'
     end
   end
+
+  resources :products
+
+  resources :orders, only: [:index, :show, :new, :create]
   
   root 'static_pages#about'
 
-  resources :products
   get 'static_pages/about'
 
   get 'static_pages/contact'
@@ -79,5 +82,4 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  resources :orders, only: [:index, :show, :new, :create]
 end
