@@ -1,4 +1,4 @@
-/*
+ /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -56,7 +56,6 @@
 .motto{
   font-style: italic;
   background-color: #F6F6F6;
-  height: 90px;
 }
 .upper-header{
   font-weight: 600;
