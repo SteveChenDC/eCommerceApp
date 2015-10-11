@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   end
 
   resources :products
-
   resources :orders, only: [:index, :show, :new, :create]
+  resources :users
   
   root 'static_pages#about'
 
