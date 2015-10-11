@@ -10,7 +10,6 @@ Rails.application.routes.draw do
 
   resources :products
   resources :orders, only: [:index, :show, :new, :create]
-  resources :users
   
   root 'static_pages#about'
 
