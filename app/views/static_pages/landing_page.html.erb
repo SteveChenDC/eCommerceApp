@@ -7,7 +7,7 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox" style="width: 100%; height:300px; margin: 0 auto">
+  <div class="carousel-inner" role="listbox">
   	<% @products.each do |product| %>
     <div class="item<%= " active" if product == @products.first %>">
       <%= image_tag(product.image_url) %>
