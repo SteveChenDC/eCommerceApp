@@ -2,9 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.product-name{
+  padding-left: 15px;
+}
+.feature-list{
+  list-style:none;
+  padding-left:0;
+}
 .text-center{
 	text-align: center;
 }
+
 table {
 	border: solid;
 }
