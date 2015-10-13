@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
-  resources :users
   
   resource :user, only: [:edit] do
     collection do
@@ -8,7 +7,10 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :products
+  resources :products do # This is a nested reource.
+    resources :comments # Reviews are associated with a specific product. Comments resources are a subset of products.
+  end
+  resources :users
   resources :orders, only: [:index, :show, :new, :create]
   
   root 'static_pages#landing_page'
