@@ -25,9 +25,14 @@
   </div>
 </div>
 
-<%= render 'new_comment' %> 
+<div class="container-fluid">
+  <div class="row side-padding">
+    <%= render 'new_comment' %> 
+    <%= render 'comments' %>
+  </div>
+</div>
 
-<%= render 'comments' %>
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
