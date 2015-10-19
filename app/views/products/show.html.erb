@@ -27,8 +27,9 @@
 
 <div class="container-fluid">
   <div class="row side-padding">
-    <%= render 'new_comment' %> 
+    <%= render 'new_comment' %>
     <%= render 'comments' %>
+    <%= will_paginate @comments %>
   </div>
 </div>
 
