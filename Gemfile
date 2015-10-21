@@ -32,6 +32,8 @@ gem 'devise'
 gem 'cancancan'
 # Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.5'
+# RSpec for testing
+gem 'rspec', '~> 3.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -45,6 +47,11 @@ gem 'will_paginate', '~> 3.0.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  gem 'rspec-rails', '~> 3.0'
+
+  gem 'sqlite3'
+
 end
 
 group :development do
@@ -60,7 +67,5 @@ group :production do
 	gem 'pg'
 end
 
-group :development, :test do
-	gem 'sqlite3'
-end
+
 
