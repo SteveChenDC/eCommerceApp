@@ -34,6 +34,8 @@ gem 'cancancan'
 gem 'will_paginate', '~> 3.0.5'
 # RSpec for testing
 gem 'rspec', '~> 3.0'
+# factory girl for rails
+gem 'factory_girl_rails', "~> 4.0"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
