@@ -24,7 +24,7 @@ FactoryGirl.define do
     product
     body "stuff and stuff"
     rating "3"
-    product_id "1"
+    product_id 1
   end
 
   factory :order do
