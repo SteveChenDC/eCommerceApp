@@ -1,0 +1,8 @@
+<script
+  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+  product.image_url="/square-image.png"
+  product.name="Demo Site"
+  product.description="2 widgets ($20.00)"
+  product.price="2000">
+</script>

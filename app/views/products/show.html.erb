@@ -13,15 +13,18 @@
       </ul>
     </div>
 
-
-
     <div class="col-lg-6 col-md-6">
+    <%= form_tag "/payments/create" do %>
+      <%= render partial: "shared/stripe_checkout_button" %>
+    <% end %>
+    </div>
+<!--     <div class="col-lg-6 col-md-6">
       <p>
         <strong>Description:</strong>
         <%= @product.description %>
       </p>
       <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
-    </div>
+    </div> -->
   </div>
 </div>
 
