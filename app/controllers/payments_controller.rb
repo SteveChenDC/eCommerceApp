@@ -10,7 +10,7 @@ class PaymentsController < ApplicationController
     # Create charge on Stripe's servers - this will charge the user's card
     begin
       charge = Stripe::Charge.create(
-        :amount => @product.price, # amount in cents
+        :amount => (@product.price.to_d * 100).to_i, # amount in cents
         :currency => "usd",
         :source => token,
         :description => params[:stripeEmail]
@@ -31,4 +31,9 @@ class PaymentsController < ApplicationController
     end
     redirect_to product_path(@product)
   end
+
+    # def convert_money_to_cents
+    #   self.price_in_cents = (self.price.to_d * 100).to_i
+    #   self.fee_in_cents = (self.fee.to_d * 100).to_i
+    # end
 end
