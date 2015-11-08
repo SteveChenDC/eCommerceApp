@@ -22,18 +22,13 @@ class PaymentsController < ApplicationController
           :total => @product.price
           )
       end
-
     rescue Stripe::CardError => e
       # The card has been declined
       body = e.json_body
       err = body[:error]
       flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
     end
-    redirect_to product_path(@product)
+    # This redirects to product page after user submits the payment
+    # redirect_to product_path(@product)
   end
-
-    # def convert_money_to_cents
-    #   self.price_in_cents = (self.price.to_d * 100).to_i
-    #   self.fee_in_cents = (self.fee.to_d * 100).to_i
-    # end
 end

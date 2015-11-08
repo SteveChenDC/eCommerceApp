@@ -1,2 +1,5 @@
-<p>Thank you for your purchase</p>
-<p><%= link_to "Click here", products_path(@product) %> to go back to main Product page</p>
+<p>Order has been successfully created! Thank you for your purchase. Your payment was successful! Here's your product details:</p>
+<p><strong>Name:</strong> <%= @product.name %></p>
+<p><strong>Color:</strong> <%= @product.colour %></p>
+<p><strong>Price:</strong> <%= @product.price %></p>
+<p>Print this page for your records. <%= link_to "Click here", products_path(@product) %> to go back to your Product page</p>
