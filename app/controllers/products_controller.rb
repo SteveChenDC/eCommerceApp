@@ -5,12 +5,17 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     if params[:q]
+      logger.debug ":q parameter value after being entered and before being assigned to search_term: #{params[:q]}"
       search_term = params[:q]
+      logger.debug ":q parameter value after defining search_term: #{params[:q]} Value of search_term: #{search_term}"
       @products = Product.where("name LIKE ?", "%#{search_term}%")
+      logger.debug "search_term value after Product.where searches for search_term: #{search_term}"
       # return our filtered list here
     else
       @products = Product.all
+      logger.debug "No search term was entered will display all #{@products.count} products "
     end
+      logger.debug "Done iterating"
   end
 
   # GET /products/1

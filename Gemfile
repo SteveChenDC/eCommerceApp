@@ -38,8 +38,6 @@ gem 'rspec', '~> 3.0'
 gem 'factory_girl_rails', "~> 4.0"
 # ffi
 gem 'ffi'
-# Spork
-gem 'spork'
 # Spork rails automatically forks a copy of the server each time tests are run
 gem 'spork-rails'
 # Stripe
@@ -72,6 +70,8 @@ group :development do
   gem 'spring'
   # Guard automates various tasks by running custom rules whenever file or directories are modified
   gem 'guard'
+  # Guard Rspec
+  gem 'guard-rspec', require: false
   # guard-spork automatically starts/reload your RSpec/Cucumber/Test::Unit Spork server(s).
   gem 'guard-spork'
 end
