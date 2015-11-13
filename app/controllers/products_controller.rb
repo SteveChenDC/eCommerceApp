@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    logger.debug "Presence of :q param? #{params[:q].present?}"
     if params[:q]
       logger.debug ":q parameter value after being entered and before being assigned to search_term: #{params[:q]}"
       search_term = params[:q]
