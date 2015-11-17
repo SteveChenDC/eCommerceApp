@@ -44,9 +44,6 @@ gem 'spork-rails'
 gem 'stripe'
 # Brakeman rails security scanner
 gem 'brakeman', :require => false
-# Mailcatcher
-gem 'mailcatcher'
-
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -64,7 +61,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 
   gem 'sqlite3'
-
+  # Mailcatcher
+  gem 'mailcatcher'
 end
 
 group :development do
