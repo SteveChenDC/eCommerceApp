@@ -42,12 +42,10 @@ gem 'ffi'
 gem 'spork-rails'
 # Stripe
 gem 'stripe'
-
-# reCAPTCHA security plug-in for rails
-# gem 'recaptcha', :require => "recaptcha/rails"
-
 # Brakeman rails security scanner
 gem 'brakeman', :require => false
+# Mailcatcher
+gem 'mailcatcher'
 
 
 # Use ActiveModel has_secure_password
