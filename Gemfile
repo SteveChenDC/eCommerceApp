@@ -38,6 +38,8 @@ gem 'rspec', '~> 3.0'
 gem 'factory_girl_rails', "~> 4.0"
 # ffi
 gem 'ffi'
+#Spork
+gem 'spork', github: 'sporkrb/spork'
 # Spork rails automatically forks a copy of the server each time tests are run
 gem 'spork-rails'
 # Stripe
