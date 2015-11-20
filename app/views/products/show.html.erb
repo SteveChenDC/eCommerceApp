@@ -4,7 +4,7 @@
   <h3 class="product-name"><%= @product.name %></h3>
     <div class="col-lg-4 col-md-4">
       <a href="#" class="thumbnail">
-        <%= image_tag(@product.image_url) %>
+        <%= image_tag(@product.image_url, width: "350", class: "img-zoom", data_zoom_image: @product.image_url) %>
       </a>
       <ul class="feature-list">
         <li><strong>Color:</strong><%= @product.colour %></li>
