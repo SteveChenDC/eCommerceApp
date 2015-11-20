@@ -1,0 +1,12 @@
+// Hides the new comment id where the user has posted a review and thanks
+$("#new_comment").html("Thank you for your review!");
+// Renders comment where it will be posted
+$('.product-reviews').prepend("<%= j render @comment %>");
+// Shows the rating the user has posted
+$('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
+$('.rated').raty({ path: '/assets',
+  readOnly: true,
+  score: function() {
+    return $(this).attr('data-score');
+  }
+});
