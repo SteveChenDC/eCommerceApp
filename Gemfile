@@ -46,6 +46,8 @@ gem 'spork-rails'
 gem 'stripe'
 # Brakeman rails security scanner
 gem 'brakeman', :require => false
+# AngularJS javascript framework
+gem 'angularjs-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

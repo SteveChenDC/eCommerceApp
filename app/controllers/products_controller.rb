@@ -1,22 +1,21 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  respond_to :json, :html
 
   # GET /products
   # GET /products.json
   def index
-    logger.debug "Presence of :q param? #{params[:q].present?}"
     if params[:q]
-      logger.debug ":q parameter value after being entered and before being assigned to search_term: #{params[:q]}"
       search_term = params[:q]
-      logger.debug ":q parameter value after defining search_term: #{params[:q]} Value of search_term: #{search_term}"
+      # logger.debug ":q parameter value after defining search_term: #{params[:q]} Value of search_term: #{search_term}"
       @products = Product.where("name LIKE ?", "%#{search_term}%")
-      logger.debug "search_term value after Product.where searches for search_term: #{search_term}"
+      # logger.debug "search_term value after Product.where searches for search_term: #{search_term}"
       # return our filtered list here
     else
       @products = Product.all
-      logger.debug "No search term was entered will display all #{@products.count} products "
+      # logger.debug "No search term was entered will display all #{@products.count} products "
     end
-      logger.debug "Done iterating"
+    respond_with @products
   end
 
   # GET /products/1
