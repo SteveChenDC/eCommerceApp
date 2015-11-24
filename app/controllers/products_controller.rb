@@ -14,8 +14,8 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
       # logger.debug "No search term was entered will display all #{@products.count} products "
+      respond_with @products
     end
-    respond_with @products
   end
 
   # GET /products/1
