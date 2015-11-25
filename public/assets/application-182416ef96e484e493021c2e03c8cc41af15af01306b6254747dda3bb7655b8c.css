@@ -1,0 +1,263 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 5, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/products.scss */
+.product-name {
+  padding-left: 15px;
+}
+
+/* line 8, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/products.scss */
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 12, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/products.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 15, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/products.scss */
+.side-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 19, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/products.scss */
+.pagination {
+  text-align: center;
+  display: block;
+}
+
+/* line 24, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/products.scss */
+table {
+  border: solid;
+}
+
+/* line 27, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/products.scss */
+.item-center {
+  margin: 0 auto;
+}
+
+/* line 30, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/products.scss */
+td, th {
+  padding: 5px;
+}
+/* line 1, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 5, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: arial;
+  color: blue;
+  text-align: left;
+}
+
+/* line 11, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/static_pages.scss */
+.item-active {
+  max-height: 600px;
+}
+
+/* line 15, /Users/stevenchen/Desktop/testapp/app/assets/stylesheets/static_pages.scss */
+.carousel-inner {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+}
+ /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+ body{
+ }
+.item-center{
+	margin: 0 auto;
+}
+.text-center{
+	text-align: center;
+}
+/*div{
+	border: 1px solid black;
+}*/
+#wrapper {
+	width: 940px;
+	margin: 0 auto;
+}
+.upper-header{
+  height: 28px;
+  background-color: #54a792;
+  color: #FFF;
+  font-size: 12px;
+}
+.upper-row{
+  padding: 5px;
+  overflow: hidden;
+}
+.middle-header{
+	display: block;
+  height: 90px;
+}
+.lower-header{
+	width: 100%;
+	display: block;
+}
+.search-bar {
+	padding: 15px;
+  float: right;
+}
+.search-bar label{
+	color: white;
+}
+.motto{
+  font-style: italic;
+  background-color: #F6F6F6;
+}
+.upper-header{
+  font-weight: 600;
+}
+.logo{
+  max-width: 300px;
+  max-height: 90px;
+}
+
+footer{
+	text-align: center;
+	background-color: #F6F6F6;
+}
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	display: inline;
+}
