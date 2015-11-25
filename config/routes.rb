@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     resources :comments # Reviews are associated with a specific product. Comments resources are a subset of products.
   end
   resources :users
-  resources :orders, only: [:index, :show, :new, :create]
+  resources :orders, only: [:index, :show, :create, :destroy]
   
   root 'static_pages#landing_page'
 
