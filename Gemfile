@@ -48,6 +48,8 @@ gem 'stripe'
 gem 'brakeman', :require => false
 # AngularJS javascript framework
 gem 'angularjs-rails'
+# Dalli Ruby memcache client
+gem 'dalli'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
