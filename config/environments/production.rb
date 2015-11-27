@@ -42,7 +42,7 @@ Rails.application.configure do
   config.action_dispatch.x_sendfile_header = nil # For Heroku
   
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = true
+  config.force_ssl = false
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -55,14 +55,14 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 
   # Use a different cache store in production.
-  config.cache_store = :dalli_store,
-                      (ENV["mc5.dev.ec2.memcachier.com:11211"] || "").split(","),
-                      {:username => ENV["22d730"],
-                       :password => ENV["607f454031505c789d59fac4c8fd2b23"],
-                       :failover => true,
-                       :socket_timeout => 1.5,
-                       :socket_failure_delay => 0.2
-                     }
+  # config.cache_store = :dalli_store,
+  #                     (ENV["mc5.dev.ec2.memcachier.com:11211"] || "").split(","),
+  #                     {:username => ENV["22d730"],
+  #                      :password => ENV["607f454031505c789d59fac4c8fd2b23"],
+  #                      :failover => true,
+  #                      :socket_timeout => 1.5,
+  #                      :socket_failure_delay => 0.2
+  #                    }
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
