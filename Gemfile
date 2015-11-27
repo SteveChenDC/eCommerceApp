@@ -51,6 +51,8 @@ gem 'angularjs-rails'
 # Dalli Ruby memcache client
 gem 'dalli'
 
+gem 'memcachier'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

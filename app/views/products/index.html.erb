@@ -15,8 +15,12 @@
   </thead>
 
   <tbody>
-    <% cache(@products) do %>
-      <%= render @products %>
+    <% cache(cache_key_for_products) do %>
+      <% @products.each do |p| %>
+        <% cache(p) do %>
+          <%= render partial: 'product', object: p %>
+        <% end %>
+      <% end %>
     <% end %>
   </tbody>
 </table>
@@ -24,3 +28,5 @@
 
 
 <%= link_to 'New Product', new_product_path %>
+
+

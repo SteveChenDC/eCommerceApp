@@ -1,19 +1,9 @@
       <tr>
-            <% cache(product.name) do %> 
             <td><%= product.name %></td>
-            <% end %>
-            <% cache(product.description) do %> 
             <td><%= product.description %></td>
-            <% end %>
-            <% cache(product.image_url) do %> 
             <td><%= product.image_url %></td>
-            <% end %>
-            <% cache(product.colour) do %> 
             <td><%= product.colour %></td>
-            <% end %>
-            <% cache(product.price) do %> 
             <td><%= product.price %></td>
-            <% end %>
             <td><%= link_to 'Show', product %></td>
             <td><%= link_to 'Edit', edit_product_path(product) %></td>
             <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>

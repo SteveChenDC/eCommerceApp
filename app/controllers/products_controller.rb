@@ -12,9 +12,10 @@ class ProductsController < ApplicationController
       # logger.debug "search_term value after Product.where searches for search_term: #{search_term}"
       # return our filtered list here
     else
-      @products = Product.all
-      # logger.debug "No search term was entered will display all #{@products.count} products "
+      @products = Product.all_cached
       respond_with @products
+      @stats = Rails.cache.stats.first.last  
+
     end
   end
 
