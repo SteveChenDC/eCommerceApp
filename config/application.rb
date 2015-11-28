@@ -34,5 +34,7 @@ module Testapp
     config.action_controller.perform_caching = true
     config.serve_static_files = true
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
   end
 end

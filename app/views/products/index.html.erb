@@ -2,7 +2,7 @@
 
 <h1 class="text-center">Listing Products</h1>
 
-<table class="item-center">
+<!-- <table class="item-center">
   <thead>
     <tr>
       <th>Name</th>
@@ -28,5 +28,17 @@
 
 
 <%= link_to 'New Product', new_product_path %>
+ -->
 
-
+<table class="item-center">
+  <tbody>
+    <% cache(cache_key_for_products) do %>
+      <% @products.each do |p| %>
+        <% cache(p) do %>
+          <%= render partial: 'product', object: p %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+<br>

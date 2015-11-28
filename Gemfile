@@ -50,8 +50,10 @@ gem 'brakeman', :require => false
 gem 'angularjs-rails'
 # Dalli Ruby memcache client
 gem 'dalli'
-
+# memcachier
 gem 'memcachier'
+# Redis-rails
+gem 'redis-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
