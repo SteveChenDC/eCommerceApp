@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="text-center">Listing Products</h1>
+<h1 class="text-center">Our Products</h1>
 
 <!-- <table class="item-center">
   <thead>
@@ -24,21 +24,23 @@
     <% end %>
   </tbody>
 </table>
-<br>
-
-
-<%= link_to 'New Product', new_product_path %>
- -->
+<br> -->
 
 <table class="item-center">
   <tbody>
     <% cache(cache_key_for_products) do %>
       <% @products.each do |p| %>
         <% cache(p) do %>
-          <%= render partial: 'product', object: p %>
+          <div class="row">
+            <%= render partial: 'product', object: p %>
+          </div>
         <% end %>
       <% end %>
     <% end %>
   </tbody>
 </table>
 <br>
+
+<% if can? :manage, @product %>
+  <%= link_to 'New Product', new_product_path %>
+<% end %>

@@ -65,9 +65,19 @@
   max-height: 90px;
 }
 
+h1 { 
+  font-size: 1.875em;
+  padding: 1em 0;
+  text-align: center;
+  color: black;
+}
+
 footer{
+  position:fixed;
 	text-align: center;
 	background-color: #F6F6F6;
+  width: 940px;
+  bottom: 0%;
 }
 footer ul{
 	list-style: none;
