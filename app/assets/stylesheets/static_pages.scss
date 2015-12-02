@@ -2,12 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 { 
-	font-family: arial;
-	color: blue;
-	text-align: left;
-}
-
 .item-active{
   max-height: 600px; //  Should match with .carousel-inner height
 }
@@ -16,4 +10,9 @@ h1 {
    width: 100%; 
    height: 600px; 
    margin: 0 auto;
+}
+
+.glyphicon{
+  font-size: 35px;
+  margin-top: 20px;
 }

@@ -1,11 +1,11 @@
-                  <div class="col-md-4 col-lg-4 text-center">
-                        <%= link_to image_tag(product.image_url), product, :class => "thumbnail" %>
-                        <%= product.name %>
-                        <hr style="margin: 2px 0">
-                        <span><strong>Price:</strong> $<%= product.price %></span>
-                        <% if can? :manage, @product %>
-                        <%= link_to 'View', product %>
-                        <%= link_to 'Edit', edit_product_path(product) %>
-                        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-                        <% end %>
-                  </div>
+<div class="col-md-4 col-lg-4 text-center">
+      <%= link_to image_tag(product.image_url), product, :class => "thumbnail" %>
+      <%= product.name %>
+      <hr style="margin: 2px 0">
+      <span><strong>Price:</strong> $<%= product.price %></span>
+      <% if can? :manage, @product %>
+      <%= link_to 'View', product %>
+      <%= link_to 'Edit', edit_product_path(product) %>
+      <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
+</div>

@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1 class="text-center">Our Products</h1>
-
+<hr>
 <!-- <table class="item-center">
   <thead>
     <tr>
@@ -43,4 +43,5 @@
 
 <% if can? :manage, @product %>
   <%= link_to 'New Product', new_product_path %>
+  <%= link_to 'Edit', edit_products_path %> |
 <% end %>

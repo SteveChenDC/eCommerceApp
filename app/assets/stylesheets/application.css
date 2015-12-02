@@ -56,6 +56,7 @@
 .motto{
   font-style: italic;
   background-color: #F6F6F6;
+  padding-bottom: 34px;
 }
 .upper-header{
   font-weight: 600;
@@ -73,7 +74,7 @@ h1 {
 }
 
 footer{
-  position:fixed;
+  position:;
 	text-align: center;
 	background-color: #F6F6F6;
   width: 940px;
