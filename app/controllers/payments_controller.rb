@@ -21,7 +21,7 @@ class PaymentsController < ApplicationController
           :user_id => current_user,
           :total => @product.price
           )
-        UserMailer.purchase_successful(@user, 'The order has been received!', @order).deliver_now
+        UserMailer.purchase_successful(@user, 'Your purchase was successful', @order).deliver_now
       end
     rescue Stripe::CardError => e
       # The card has been declined
