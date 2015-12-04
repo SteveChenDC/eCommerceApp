@@ -21,6 +21,11 @@ class PaymentsController < ApplicationController
           :user_id => current_user,
           :total => @product.price
           )
+        @record = Record.new
+        if @record.save
+          User_mailer.purchase_successful(@record).deliver
+          redirect_to @record
+        end
       end
     rescue Stripe::CardError => e
       # The card has been declined
