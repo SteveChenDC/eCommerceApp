@@ -8,8 +8,9 @@ class UserMailer < ApplicationMailer
 				:subject => "A new contact form message from #{name}")
 	end
 
-  def purchase_successful(record)
-    @record = record
-    mail to: "stevechenweb@gmail.com", subject: "Your purchase information"
+  def purchase_successful(user, subject, order)
+       @order = order
+       @user = user
+       mail(to: user.email, subject: subject)
   end
 end
