@@ -13,13 +13,16 @@
  *= require_tree .
  *= require_self
  */
- body{
- }
+
 .item-center{
 	margin: 0 auto;
 }
 .text-center{
 	text-align: center;
+}
+.glyphicon{
+  font-size: 35px;
+  margin-top: 20px;
 }
 /*div{
 	border: 1px solid black;

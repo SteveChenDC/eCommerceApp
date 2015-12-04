@@ -9,4 +9,8 @@ $(document).on('ready page:load', function(){
       }
     });
 });
+$('.search-field').autocomplete({
+  appendTo: '.search-form',
+  source: '/search_suggestions'
+});
 

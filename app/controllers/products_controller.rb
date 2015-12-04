@@ -15,7 +15,6 @@ class ProductsController < ApplicationController
       @products = Product.all_cached
       respond_with @products
       @stats = Rails.cache.stats.first.last  
-
     end
   end
 
